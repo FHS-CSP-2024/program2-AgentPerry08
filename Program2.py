@@ -49,7 +49,9 @@
 ## Problem 1 ##
 #Please write a script that: 
 # - Asks for the user's name and then prints it twice, on two consecutive lines.
-
+name = input("Yo! Please tell me your name! \n ")
+print("Hi " + name )
+print("Hi " + name )
 
 
 
@@ -59,23 +61,38 @@
 # - Asks for the user's name
 # - Prints it out twice on a single line so that there is an exclamation mark at the beginning of the line, 
 # - another between the two names and a third one at the end of the line.
+name = input("Hola! Please tell me your name! \n")
+print ("!" + name + " "+ "!"+ name)
 
 
 ## Problem 3 ##
 #Please write a script that: 
-# - Asks for the user's name and address. 
 # - The program should also print out the given information, as follows:
 #   - Sample output
 #   - First name: Steve
 #   - Last name: Sanders
 #   - Street address: 91 Station Road
 #   - City and postal code: Folsom CA, 95630
+firstname = input("What is your first name? \n")
+lastname = input("What is your last name? \n")
+address = input("What is your street address? \n")
+cityandpost = input("What is your city and postal code? \n")
+
+print("\n Here are your details:")
+print("First name: " + firstname)
+print("Last name: " + lastname)
+print("Street address: " + address)
+print("City and postal code: " + cityandpost)
 
 ## Problem 4 ##
 #Please write a script that: 
 # - Asks for 3 words 
 # - Puts the words together with dashes and prints that out
+word1 = input("Please tell me the first word: \n")
+word2 = input("What is the second word: \n")
+word3 = input("What is the third word: \n")
 
+print(word1 + "-" + word2 + "-" + word3)
 
 ## Problem 5 ##
 #Please write a script that: 
@@ -88,3 +105,10 @@
 #Mary is a valiant knight, born in the year 1572. 
 #One morning Mary woke up to an awful racket: a dragon was approaching the village. 
 #Only Mary could save the village's residents.
+name = input("Enter the name: \n")
+year = input("Enter the year: \n")
+
+print("\n")
+print("In " + year + ", Commander " + name + " faced a code red: a dragon attack.")
+print(name + " swiftly organized the defense, leading the charge.")
+print("The mission was clear: protect the base, eliminate the threat.")
